@@ -1,0 +1,15 @@
+D:\Projects\Shoniz Utility\Common WPF\bin\Debug\Shoniz.Common.WPF.dll
+D:\Projects\Shoniz Utility\Common WPF\bin\Debug\Shoniz.Common.WPF.pdb
+D:\Projects\Shoniz Utility\Common WPF\obj\Debug\Shoniz.Common.WPF.dll
+D:\Projects\Shoniz Utility\Common WPF\obj\Debug\Shoniz.Common.WPF.pdb
+D:\Projects\Shoniz Utility\Common WPF\obj\Debug\Common WPF.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common WPF\bin\Debug\Shoniz.Common.WPF.dll
+E:\Projects\Shoniz Utility\Common WPF\bin\Debug\Shoniz.Common.WPF.pdb
+E:\Projects\Shoniz Utility\Common WPF\obj\Debug\Common WPF.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common WPF\obj\Debug\Shoniz.Common.WPF.dll
+E:\Projects\Shoniz Utility\Common WPF\obj\Debug\Shoniz.Common.WPF.pdb
+F:\Projects\Shoniz Utility\Common WPF\bin\Debug\Shoniz.Common.WPF.dll
+F:\Projects\Shoniz Utility\Common WPF\bin\Debug\Shoniz.Common.WPF.pdb
+F:\Projects\Shoniz Utility\Common WPF\obj\Debug\Shoniz.Common.WPF.dll
+F:\Projects\Shoniz Utility\Common WPF\obj\Debug\Shoniz.Common.WPF.pdb
+F:\Projects\Shoniz Utility\Common WPF\obj\Debug\Common WPF.csprojResolveAssemblyReference.cache

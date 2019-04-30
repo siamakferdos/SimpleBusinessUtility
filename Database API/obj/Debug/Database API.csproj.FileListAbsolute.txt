@@ -1,0 +1,14 @@
+C:\Users\ferdos.s\Documents\Visual Studio 2013\Projects\Database API\Database API\bin\Debug\Shoniz.Database API.dll
+C:\Users\ferdos.s\Documents\Visual Studio 2013\Projects\Database API\Database API\bin\Debug\Shoniz.Database API.pdb
+C:\Users\ferdos.s\Documents\Visual Studio 2013\Projects\Database API\Database API\obj\Debug\Shoniz.Database API.dll
+C:\Users\ferdos.s\Documents\Visual Studio 2013\Projects\Database API\Database API\obj\Debug\Shoniz.Database API.pdb
+C:\Users\ferdos.s\Documents\Visual Studio 2013\Projects\Database API\Database API\obj\Debug\Database API.csprojResolveAssemblyReference.cache
+C:\Users\ferdos.s\Documents\Visual Studio 2013\Projects\Database API\Database API\bin\Debug\Shoniz.Exception.dll
+C:\Users\ferdos.s\Documents\Visual Studio 2013\Projects\Database API\Database API\bin\Debug\Shoniz.Exception.pdb
+D:\Projects\Shoniz Utility\Database API\bin\Debug\Shoniz.Exception.dll
+D:\Projects\Shoniz Utility\Database API\bin\Debug\Shoniz.Exception.pdb
+D:\Projects\Shoniz Utility\Database API\obj\Debug\Database API.csprojResolveAssemblyReference.cache
+D:\Projects\Shoniz Utility\Database API\bin\Debug\Shoniz.Data.dll
+D:\Projects\Shoniz Utility\Database API\bin\Debug\Shoniz.Data.pdb
+D:\Projects\Shoniz Utility\Database API\obj\Debug\Shoniz.Data.dll
+D:\Projects\Shoniz Utility\Database API\obj\Debug\Shoniz.Data.pdb

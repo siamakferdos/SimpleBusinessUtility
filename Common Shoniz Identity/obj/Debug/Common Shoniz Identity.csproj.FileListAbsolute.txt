@@ -1,0 +1,27 @@
+D:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.ShonizIdentity.dll
+D:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.ShonizIdentity.pdb
+D:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.Core.dll
+D:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.Data.dll
+D:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.Core.pdb
+D:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.Data.pdb
+D:\Projects\Shoniz Utility\Common Shoniz Identity\obj\Debug\Shoniz.Common.ShonizIdentity.dll
+D:\Projects\Shoniz Utility\Common Shoniz Identity\obj\Debug\Shoniz.Common.ShonizIdentity.pdb
+D:\Projects\Shoniz Utility\Common Shoniz Identity\obj\Debug\Common Shoniz Identity.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.ShonizIdentity.dll
+E:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.ShonizIdentity.pdb
+E:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.Core.dll
+E:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.Data.dll
+E:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.Core.pdb
+E:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.Data.pdb
+E:\Projects\Shoniz Utility\Common Shoniz Identity\obj\Debug\Common Shoniz Identity.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common Shoniz Identity\obj\Debug\Shoniz.Common.ShonizIdentity.dll
+E:\Projects\Shoniz Utility\Common Shoniz Identity\obj\Debug\Shoniz.Common.ShonizIdentity.pdb
+F:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.ShonizIdentity.dll
+F:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.ShonizIdentity.pdb
+F:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.Core.dll
+F:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.Data.dll
+F:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.Core.pdb
+F:\Projects\Shoniz Utility\Common Shoniz Identity\bin\Debug\Shoniz.Common.Data.pdb
+F:\Projects\Shoniz Utility\Common Shoniz Identity\obj\Debug\Common Shoniz Identity.csprojResolveAssemblyReference.cache
+F:\Projects\Shoniz Utility\Common Shoniz Identity\obj\Debug\Shoniz.Common.ShonizIdentity.dll
+F:\Projects\Shoniz Utility\Common Shoniz Identity\obj\Debug\Shoniz.Common.ShonizIdentity.pdb

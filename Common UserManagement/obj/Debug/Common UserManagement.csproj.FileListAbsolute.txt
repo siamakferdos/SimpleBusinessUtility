@@ -1,0 +1,27 @@
+D:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.UserManagement.dll
+D:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.UserManagement.pdb
+D:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.Core.dll
+D:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.Data.dll
+D:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.Core.pdb
+D:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.Data.pdb
+D:\Projects\Shoniz Utility\Common UserManagement\obj\Debug\Common UserManagement.csprojResolveAssemblyReference.cache
+D:\Projects\Shoniz Utility\Common UserManagement\obj\Debug\Shoniz.Common.UserManagement.dll
+D:\Projects\Shoniz Utility\Common UserManagement\obj\Debug\Shoniz.Common.UserManagement.pdb
+E:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.UserManagement.dll
+E:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.UserManagement.pdb
+E:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.Core.dll
+E:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.Data.dll
+E:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.Core.pdb
+E:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.Data.pdb
+E:\Projects\Shoniz Utility\Common UserManagement\obj\Debug\Common UserManagement.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common UserManagement\obj\Debug\Shoniz.Common.UserManagement.dll
+E:\Projects\Shoniz Utility\Common UserManagement\obj\Debug\Shoniz.Common.UserManagement.pdb
+F:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.UserManagement.dll
+F:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.UserManagement.pdb
+F:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.Core.dll
+F:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.Data.dll
+F:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.Core.pdb
+F:\Projects\Shoniz Utility\Common UserManagement\bin\Debug\Shoniz.Common.Data.pdb
+F:\Projects\Shoniz Utility\Common UserManagement\obj\Debug\Common UserManagement.csprojResolveAssemblyReference.cache
+F:\Projects\Shoniz Utility\Common UserManagement\obj\Debug\Shoniz.Common.UserManagement.dll
+F:\Projects\Shoniz Utility\Common UserManagement\obj\Debug\Shoniz.Common.UserManagement.pdb

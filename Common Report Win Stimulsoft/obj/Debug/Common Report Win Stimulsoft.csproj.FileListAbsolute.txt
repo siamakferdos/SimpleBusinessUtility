@@ -1,0 +1,13 @@
+D:\Projects\Shoniz Utility\Common Report Win Stimulsoft\bin\Debug\Common.Report.Win.Stimulsoft.dll
+D:\Projects\Shoniz Utility\Common Report Win Stimulsoft\bin\Debug\Common.Report.Win.Stimulsoft.pdb
+D:\Projects\Shoniz Utility\Common Report Win Stimulsoft\obj\Debug\Common.Report.Win.Stimulsoft.dll
+D:\Projects\Shoniz Utility\Common Report Win Stimulsoft\obj\Debug\Common.Report.Win.Stimulsoft.pdb
+E:\Projects\Shoniz Utility\Common Report Win Stimulsoft\bin\Debug\Common.Report.Win.Stimulsoft.dll
+E:\Projects\Shoniz Utility\Common Report Win Stimulsoft\bin\Debug\Common.Report.Win.Stimulsoft.pdb
+E:\Projects\Shoniz Utility\Common Report Win Stimulsoft\obj\Debug\Common.Report.Win.Stimulsoft.dll
+E:\Projects\Shoniz Utility\Common Report Win Stimulsoft\obj\Debug\Common.Report.Win.Stimulsoft.pdb
+F:\Projects\Shoniz Utility\Common Report Win Stimulsoft\bin\Debug\Common.Report.Win.Stimulsoft.dll
+F:\Projects\Shoniz Utility\Common Report Win Stimulsoft\bin\Debug\Common.Report.Win.Stimulsoft.pdb
+F:\Projects\Shoniz Utility\Common Report Win Stimulsoft\obj\Debug\Common.Report.Win.Stimulsoft.dll
+F:\Projects\Shoniz Utility\Common Report Win Stimulsoft\obj\Debug\Common.Report.Win.Stimulsoft.pdb
+F:\Projects\Shoniz Utility\Common Report Win Stimulsoft\obj\Debug\Common Report Win Stimulsoft.csprojResolveAssemblyReference.cache

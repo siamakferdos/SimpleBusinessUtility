@@ -1,0 +1,435 @@
+﻿@using System.Reflection
+@using System.Linq.Expressions;
+@using Shoniz.StuffTransfer.Util;
+@using Shoniz.StuffTransfer.General;
+
+@model GridModel
+
+<link href="~/Content/GridStyle.css" rel="stylesheet" />
+
+<div>
+    @{
+
+        int rowNum = Model.CurrentPageIndex * Model.PageRecordCount - 10;
+        //Layout = nul;
+
+        List<object> list = Model.GridDataSource;
+
+        //EditingMode has override SelectingMode in some case
+        if (Model.EditingMode == GridModel.ShonizGridEditMode.All)
+        {
+            Model.SelectingMode = GridModel.SelectMode.None;
+        }
+
+        List<string> primaryKeyFields = new List<string>();
+
+        if (list != null && list.Count > 0)
+        {
+
+            PropertyInfo[] peops = list[0].GetType().GetProperties();
+
+            <div id="@("GridContainer" + Model.GridName)" class="webGridContainer">
+                <table style="direction:rtl;" class="webgrid @(Model.GridName) table @(Model.TableAdditionalClasses)" id='@("Grid" + Model.GridName)'>
+                    @Html.Hidden("_Grid_*Grids*" + Model.GridName)
+                    <thead class="@(Model.GridName)Header">
+                        <tr>
+                            @if (Model.HasRowCounter)
+                            {
+                                <th>@(Model.RowCounterTitle)</th>
+                            }
+
+                            @foreach (PropertyInfo p in peops)
+                            {
+                                if ((p.HasAttribute(typeof(GridCustomAttribute)) && !p.GetGridCustomAttribute().Excluded) ||
+                                    !p.HasAttribute(typeof(GridCustomAttribute)))
+                                {
+                                    string columnHeaderDisplayStyle = "";
+
+                                    if (Model.HiddenFieldList.Contains(p.Name))
+                                    {
+                                        columnHeaderDisplayStyle = "display:none;";
+                                    }
+
+                                    if (p.GetGridCustomAttribute() != null)
+                                    {
+                                        if (p.GetGridCustomAttribute().Hidden)
+                                        {
+                                            columnHeaderDisplayStyle = "display:none;";
+                                        }
+                                    }
+                                    <th data-st-name="@p.Name" style="@columnHeaderDisplayStyle">
+
+
+                                        @p.DisplayName()
+                                        @{
+                                    GridCustomAttribute attr = p.GetGridCustomAttribute();
+                                    if (attr != null)
+                                    {
+                                        if (attr.PrimaryKey || attr.CanEdit)
+                                        {
+                                            if (attr.PrimaryKey)
+                                            {
+                                                @Html.Hidden("_Grid_*PrimaryKeys*" + Model.GridName + "*" + p.Name);
+                                                                                                                   primaryKeyFields.Add(p.Name);
+                                            }
+                                            @Html.Hidden("_Grid_*Fields*" + Model.GridName + "*" + p.Name);
+                                        }
+                                    }
+                                        }
+                                    </th>
+                                }
+                            }
+                            @if (Model.EditingMode == GridModel.ShonizGridEditMode.Single)
+                            {
+                                <th></th>}
+                            @if (Model.AllowDelete)
+                            {
+                                <th></th>}
+                        </tr>
+                    </thead>
+                    <tbody class="@(Model.GridName)Body @(Model.GridName)AlternativeRow">
+                        @foreach (var r in list)
+                        {
+                            rowNum++;
+                            peops = r.GetType().GetProperties();
+                            <tr>
+                                @if (Model.HasRowCounter)
+                                {
+                                    <td>@(rowNum)</td>
+                                }
+                                @foreach (var p in peops)
+                                {
+                                    if ((p.HasAttribute(typeof(GridCustomAttribute)) && !p.GetGridCustomAttribute().Excluded) ||
+                                    !p.HasAttribute(typeof(GridCustomAttribute)))
+                                    {
+                                        string tdStyle = "";
+                                        if (Model.HiddenFieldList.Contains(p.Name))
+                                        {
+                                            tdStyle = "display:none";
+                                        }
+                                        string customTD = "<td data-st-name=\"" + p.Name + "\" ";
+
+                                        if (Model.GetStyledColumns().Contains(p.Name))
+                                        {
+                                            customTD += " class= '" + Model.GridName + p.Name + "' ";
+                                        }
+
+                                        string customValue = "";
+                                        try { customValue = p.GetValue(r).ToString(); }
+                                        catch { }
+                                        if (customValue.Trim().ToUpper() == "False".ToUpper())
+                                        {
+                                            customValue = "<i class='fa fa-times'></i>";
+                                        }
+                                        else if (customValue.Trim().ToUpper() == "True".ToUpper())
+                                        {
+                                            customValue = "<i class='fa fa-check'></i>";
+                                        }
+
+                                        if (p.HasAttribute(typeof(GridCustomAttribute)))
+                                        {
+                                            GridCustomAttribute attr = p.GetGridCustomAttribute();
+                                            if (attr.Hidden && tdStyle == "")
+                                            {
+                                                tdStyle += "display:None";
+                                            }
+                                            if (attr.PrimaryKey)
+                                            {
+                                                customTD += " isPrimary='true' ";
+
+                                            }
+                                            if (attr.CanEdit)
+                                            {
+                                                customTD += " canEdit='true' ";
+                                                if (Model.EditingMode == GridModel.ShonizGridEditMode.All)
+                                                {
+                                                    string primaryKeyString = "";
+                                                    for (int i = 0; i < primaryKeyFields.Count; i++)
+                                                    {
+                                                        primaryKeyString += r.GetType().GetProperty(primaryKeyFields[i]).Name + "=" +
+                                                            r.GetType().GetProperty(primaryKeyFields[i]).GetValue(r).ToString();
+                                                        if (i < primaryKeyFields.Count - 1) { primaryKeyString += ","; }
+                                                    }
+
+
+                                                    if (("FalseTrue").ToUpper().Contains(p.GetValue(r).ToString().Trim().ToUpper()))
+                                                    {
+                                                        string selectedValue = "";
+                                                        if (customValue == "True")
+                                                        {
+                                                            selectedValue = "Selected";
+                                                        }
+
+                                                        customTD += "><input type=\"checkbox\" " + selectedValue + " data-st-name =\"_Grid_*Value*" + Model.GridName + "*" +
+                                                        primaryKeyString + "*" + p.Name + "\" " +
+                                                        "  id =\"GridTextbox" + "-" + rowNum + "-" + p.Name + "\" style='" + tdStyle + "'></td>";
+                                                    }
+                                                    else
+                                                    {
+                                                        customTD += "><input type=\"text\" value=\"" + customValue + "\" data-st-name =\"_Grid_*Value*" + Model.GridName + "*" +
+                                                            primaryKeyString + "*" + p.Name + "\" " +
+                                                            "  id =\"GridTextbox" + "-" + rowNum + "-" + p.Name + "\" style='" + tdStyle + "'></td>";
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    customTD += " style='" + tdStyle + "'>" + customValue + "</td>";
+                                                }
+
+                                            }
+                                            else
+                                            {
+                                                customTD += "  style='" + tdStyle + "'>" + customValue + "</td>";
+                                            }
+                                        }
+                                        else
+                                        {
+                                            customTD += " style='" + tdStyle + "'>" + customValue + "</td>";
+                                        }
+                                        @Html.Raw(customTD);
+                                    }
+                                }
+
+                                @if (Model.EditingMode == GridModel.ShonizGridEditMode.Single)
+                                {
+                                    <td data-st-name="edit"><i class="fa  fa-pencil"></i>@(Model.EditLinkCaption)</td>}
+                                @if (Model.AllowDelete)
+                                {
+                                    <td data-st-name="delete"><i class="fa  fa-trash-o"></i> @(Model.DeleteLinkCaption)</td>}
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot class="@(Model.GridName)GridFooter">
+
+                    </tfoot>
+
+                </table>
+
+
+
+                <div class="webgrid-pager @(Model.GridName)Pager"
+                     style="text-align:center; " id="@("Div" + Model.GridName)">
+                    @{
+                        int pageCount = 1;
+                        if (Model.RecordCount % Model.PageRecordCount == 0)
+                        {
+                            pageCount = Model.RecordCount / Model.PageRecordCount;
+                        }
+                        else
+                        {
+                            pageCount = Model.RecordCount / Model.PageRecordCount + 1;
+                        }
+
+                        if (pageCount != 1)
+                        {
+                            if (pageCount < 6)
+                            {
+                                for (int i = 1; i <= pageCount; i++)
+                                {
+                                    <span class="pageNumber" pagenumber="@(i)">
+                                        @i
+                                    </span>
+                                }
+                            }
+                            else if (Model.CurrentPageIndex <= 3)
+                            {
+                                int ForwardCount = 0;
+                                for (int i = 1; i <= pageCount && ++ForwardCount < 6; i++)
+                                {
+                                    <span class="pageNumber" pagenumber="@(i)">
+                                        @i
+                                    </span>
+                                }
+                                if (ForwardCount > 5)
+                                {
+                                    <span class="pageMove" pagemovetype="Forward"><i class="fa fa-angle-left"></i></span><span class="pageMove" pagemovetype="Last"><i class="fa fa-angle-double-left"></i></span>
+                                }
+                            }
+                            else
+                            {
+                                <span class="pageMove" pagemovetype="First"><i class="fa fa-angle-double-right"></i></span><span class="pageMove" pagemovetype="Back"><i class="fa fa-angle-right"></i></span>
+                                int ForwardCount = 0;
+                                for (int i = Model.CurrentPageIndex - 2; i <= pageCount && ++ForwardCount < 6; i++)
+                                {
+                                    <span class="pageNumber" pagenumber="@(i)">
+                                        @i
+                                    </span>
+                                }
+                                if (ForwardCount > 5)
+                                {
+                                    <span class="pageMove" pagemovetype="Forward"><i class="fa fa-angle-left"></i></span><span class="pageMove" pagemovetype="Last"><i class="fa fa-angle-double-left"></i></span>
+                                }
+                            }
+                        }
+                    }
+
+                </div>
+            </div>
+        }
+    }
+    @if (Model.SelectingMode != GridModel.SelectMode.None || Model.EditingMode == GridModel.ShonizGridEditMode.Single)
+    {
+        @Html.Hidden(Model.GridName + "SelectedRow");
+        @Html.Hidden(Model.GridName + "SelectedRowValue");
+    }
+</div>
+
+<script>
+    $(function () {
+        if("@(Model.SelectingMode)" != "@(GridModel.SelectMode.None)" &&
+            "@(Model.EditingMode)" != "@(GridModel.ShonizGridEditMode.Single)")
+        {
+            $("#@("GridContainer" + Model.GridName) table").addClass("selectableGrid");
+        }
+
+        //Sorting
+        $(".@(Model.GridName)Header th").click(function () {
+
+            if ($(this).text().length > 0)
+                var myurl = "/@(Model.Controller)/@(Model.ActionName)?PageRecordCount=" +
+                      "@(Model.PageRecordCount)&CurrentPageIndex=1&GridName=@(Model.GridName)&Filters=" +
+                      "@(Model.Filters)&OrderField=" + $(this).attr("data-st-name");
+            var mytarget = $(this).closest(".webGridContainer").parent().parent();
+            DoAjax(myurl, mytarget, "");
+        });
+        //چک کردن اینکه آیا استایل های خاص این گرید درج گشته اند یا نه و درج آنها
+        if ("@(Model.GetGridStyle())" != "")
+            if (!$("head style").hasClass("#@(Model.GridName)StyleSheet")) {
+                $("head").append("<style class = '#@(Model.GridName)StyleSheet'>@(Model.GetGridStyle())</style>");
+            }
+
+        //چک کردن اینکه آیا استایل های خاص ستون های خاص این گرید درج گشته اند یا نه و درج آنها
+        if ("@(Model.GetColumnStyle())" != "")
+            if (!$("head style").hasClass("#@(Model.GridName)ColumnStyleSheet")) {
+                $("head").append("<style class = '#@(Model.GridName)ColumnStyleSheet'>@(Model.GetColumnStyle())</style>");
+            }
+
+        //تنظیم اولیه شماره صفحه برای استایل دهی
+        $('#@("Div" + Model.GridName) span[pageNumber = "@(Model.CurrentPageIndex)"]').addClass("ActivePage");
+
+        //متد کنترل تغییر صفحات در حین کلیک بر روی خود شماره صفحات
+        $("#@("Div" + Model.GridName) .pageNumber").on("click", function () {
+            //var list = new List<object>();
+            if (!$(this).hasClass("ActivePage")) {
+                var myurl = "/@(Model.Controller)/@(Model.ActionName)?PageRecordCount=" +
+                                    "@(Model.PageRecordCount)&CurrentPageIndex=" + $(this).attr("pagenumber").toString() +
+                                    "&GridName=@(Model.GridName)&Filters=" +
+                      "@(Model.Filters)&OrderField=@(Model.OrderField)";
+                var mytarget = $(this).closest(".webGridContainer").parent().parent();
+
+
+                DoAjax(myurl, mytarget, "");
+            }
+        });
+
+        //متد تغییر صفحات در زمان کلیک >> > < <<
+        $("#@("Div" + Model.GridName) .pageMove").on("click", function () {
+
+            var mytarget = $(this).closest(".webGridContainer").parent().parent();
+            var pageindex = "1";
+            //DoAjax(myurl, mytarget, "");
+            if ($(this).attr("pagemovetype") == "Forward")
+                pageindex = parseInt($("#Div@(Model.GridName) .ActivePage").text()) + 1;
+            else if ($(this).attr("pagemovetype") == "Back")
+                pageindex = parseInt($("#Div@(Model.GridName) .ActivePage").text()) - 1;
+            else if ($(this).attr("pagemovetype") == "Last")
+            {
+                if ("@(Model.RecordCount % Model.PageRecordCount)" == 0) {
+                    pageindex = "@(Model.RecordCount / Model.PageRecordCount)";
+                }
+                else {
+                    pageindex = "@(Model.RecordCount / Model.PageRecordCount + 1)";
+                }
+            }
+
+            var myurl = "/@(Model.Controller)/@(Model.ActionName)?PageRecordCount=" +
+                    "@(Model.PageRecordCount)&GridName=@(Model.GridName)&CurrentPageIndex=" + pageindex +
+                    "&Filters=@(Model.Filters)&OrderField=@(Model.OrderField)";
+
+            DoAjax(myurl, mytarget, "");
+
+        });
+
+        $("#GridContainer@(Model.GridName) tbody td").click(function () {
+            var s = "";
+            if ("@(Model.EditingMode)" == "@(GridModel.ShonizGridEditMode.Single)" && $(this).attr("data-st-name") == "edit") {
+
+                $(this).closest("tr").find("td[isPrimary]").each(function () {
+                    //Dictionary
+                    if (s.length > 0)
+                        s += ",";
+                    s += $(this).attr("data-st-name") + ":" + $(this).text();
+                });
+                $.ajax({
+                    type: "POST",
+                    url: "/@(Model.EditController)/@(Model.EditAction)",
+                    data: JSON.stringify({ pk: s }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json"
+                });
+            }
+            else if ("@(Model.SelectingMode)" == "@(GridModel.SelectMode.Multiple)") {
+                $(this).closest("tr").toggleClass("@(Model.GridName)SelectedRow");
+            }
+            else if ("@(Model.SelectingMode)" == "@(GridModel.SelectMode.Single)") {
+                $(this).closest("table").find("tr").removeClass("@(Model.GridName)SelectedRow");
+                $(this).closest("tr").addClass("@(Model.GridName)SelectedRow");
+            }
+
+            var selectedPrimaryKeys = "";
+            var selectedRow = "";
+            var s = "";
+            var rowVal = ""
+            $("#GridContainer@(Model.GridName) tbody  .@(Model.GridName)SelectedRow").each(function () {
+
+                s = "";
+                $(this).find("td[isPrimary]").each(function () {
+                    //Dictionary
+                    if (s.length > 0)
+                        s += ",";
+                    s += $(this).attr("data-st-name") + ":" + $(this).text();
+                });
+                $(this).find("td").each(function () {
+                    //Dictionary
+                    if (rowVal.length > 0)
+                        rowVal += ",";
+                    rowVal += $(this).attr("data-st-name") + ":" + $(this).text();
+                });
+
+                if (selectedPrimaryKeys.length > 0)
+                    selectedPrimaryKeys += "*";
+                selectedPrimaryKeys += s;
+                if (selectedRow.length > 0)
+                    selectedRow += "*";
+                selectedRow += rowVal;
+
+
+            });
+            $("input[name='@(Model.GridName)SelectedRow']").val(selectedPrimaryKeys);
+            $("input[name='@(Model.GridName)SelectedRowValue']").val(selectedRow);
+        });
+
+        $("#GridContainer@(Model.GridName) .@(Model.GridName)Body tr td").on("mouseover", function () {
+            $(this).closest("tr").addClass("@(Model.GridName)MouseoverRow");
+        });
+
+        $("#GridContainer@(Model.GridName) .@(Model.GridName)Body tr td").on("mouseleave", function () {
+            $(this).closest("tr").removeClass("@(Model.GridName)MouseoverRow");
+        });
+
+        $("td[data-st-name='delete']").on("click", function () {
+            var s = "";
+            $(this).closest("tr").find("td[isPrimary]").each(function () {
+                //Dictionary
+                if (s.length > 0)
+                    s += ",";
+                s += $(this).attr("data-st-name") + ":" + $(this).text();
+            });
+
+            var url = "/@(Model.DeleteController)/@(Model.DeleteAction)?pk=" + s;
+
+            DoAjax(url, $(this).closest(".webGridContainer").parent().parent(), "");
+        });
+
+    });
+</script>

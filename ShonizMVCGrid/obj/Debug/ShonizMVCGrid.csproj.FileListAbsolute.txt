@@ -1,0 +1,5 @@
+D:\Projects\Shoniz Utility\ShonizMVCGrid\bin\Debug\Shoniz.MVCGrid.dll
+D:\Projects\Shoniz Utility\ShonizMVCGrid\bin\Debug\Shoniz.MVCGrid.pdb
+D:\Projects\Shoniz Utility\ShonizMVCGrid\obj\Debug\Shoniz.MVCGrid.dll
+D:\Projects\Shoniz Utility\ShonizMVCGrid\obj\Debug\Shoniz.MVCGrid.pdb
+D:\Projects\Shoniz Utility\ShonizMVCGrid\obj\Debug\ShonizMVCGrid.csprojResolveAssemblyReference.cache

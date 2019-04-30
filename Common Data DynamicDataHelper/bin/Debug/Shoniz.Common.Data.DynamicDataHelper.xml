@@ -1,0 +1,92 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Shoniz.Common.Data.DynamicDataHelper
+</name>
+</assembly>
+<members>
+<member name="T:Shoniz.Common.Data.DynamicDataHelper.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Shoniz.Common.Data.DynamicDataHelper.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Shoniz.Common.Data.DynamicDataHelper.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Shoniz.Common.Data.DynamicDataHelper.DataTransmitInterface.Instance">
+ <summary>
+ Gets the only instance(Singleton) of ADOHandler class. Users are only able to use ADOHandler thorght this property
+ </summary>
+ <value><c>Shoniz.CMMS.Data.ADoHandler</c></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Shoniz.Common.Data.DynamicDataHelper.DataTransmitInterface.RunAsyncronous(Shoniz.Common.Data.DynamicDataHelper.DataRequest)">
+ <summary>
+ Runs a <c>Shoniz.CMMS.Shared.Framework.DataRequest</c> object asynchronously. and publishes the result whenever it's ready on the IDataProvider object.
+ </summary>
+ <param name="Request">A <c>Shoniz.CMMS.Shared.Framework.DataRequest</c> object to run.</param>
+ <param name="Owner">A <c>Shoniz.CMMS.Shared.Framework.IDataProvider</c> object to publish return value from executing SQL command.</param>
+ <remarks></remarks>
+</member>
+<member name="M:Shoniz.Common.Data.DynamicDataHelper.DataTransmitInterface.RunImmediately(Shoniz.Common.Data.DynamicDataHelper.DataRequest)">
+ <summary>
+ Processes a <c>Shoniz.CMMS.Shared.Framework.DataRequest</c> object and returns the result immediately.
+ </summary>
+ <param name="Request">A <c>Shoniz.CMMS.Shared.Framework.DataRequest</c> object to run.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Shoniz.Common.Data.DynamicDataHelper.IDataObserver">
+ <summary>
+ Provides a way to deal with ProcedureCaller.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Shoniz.Common.Data.DynamicDataHelper.IDataObserver.RunSp(System.String,System.String,System.Action{System.Data.DataSet},Shoniz.Common.Data.DynamicDataHelper.Parameter[])">
+ <summary>
+ Runs an StoredProcedure in SQL Server using ADO.Net and calls OnDataRecieve when request completed
+ </summary>
+ <param name="Catalog"></param>
+ <param name="SpName"></param>
+ <param name="OnDataRecieve"></param>
+ <param name="Parameters"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Shoniz.Common.Data.DynamicDataHelper.IDataObserver.RunSp(System.String,System.String,Shoniz.Common.Data.DynamicDataHelper.Parameter[])">
+ <summary>
+ 
+ </summary>
+ <param name="Catalog"></param>
+ <param name="SpName"></param>
+ <param name="Parameters"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Shoniz.Common.Data.DynamicDataHelper.IDataObserver.ResolveCatalog(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="Catalog"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Shoniz.Common.Data.DynamicDataHelper.IDataObserver.CurrentDate">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,13 @@
+D:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\bin\Debug\Shoniz.Common.Report.WPF.Stimulsoft.dll
+D:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\bin\Debug\Shoniz.Common.Report.WPF.Stimulsoft.pdb
+D:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\obj\Debug\Shoniz.Common.Report.WPF.Stimulsoft.dll
+D:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\obj\Debug\Shoniz.Common.Report.WPF.Stimulsoft.pdb
+E:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\bin\Debug\Shoniz.Common.Report.WPF.Stimulsoft.dll
+E:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\bin\Debug\Shoniz.Common.Report.WPF.Stimulsoft.pdb
+E:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\obj\Debug\Common Report WPF Stimulsoft.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\obj\Debug\Shoniz.Common.Report.WPF.Stimulsoft.dll
+E:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\obj\Debug\Shoniz.Common.Report.WPF.Stimulsoft.pdb
+F:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\bin\Debug\Shoniz.Common.Report.WPF.Stimulsoft.dll
+F:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\bin\Debug\Shoniz.Common.Report.WPF.Stimulsoft.pdb
+F:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\obj\Debug\Shoniz.Common.Report.WPF.Stimulsoft.dll
+F:\Projects\Shoniz Utility\Common Report WPF Stimulsoft\obj\Debug\Shoniz.Common.Report.WPF.Stimulsoft.pdb

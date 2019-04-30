@@ -1,0 +1,5 @@
+D:\Projects\Shoniz Utility\ShonizExtention\bin\Debug\Shoniz.Extention.dll
+D:\Projects\Shoniz Utility\ShonizExtention\bin\Debug\Shoniz.Extention.pdb
+D:\Projects\Shoniz Utility\ShonizExtention\obj\Debug\ShonizExtention.csprojResolveAssemblyReference.cache
+D:\Projects\Shoniz Utility\ShonizExtention\obj\Debug\Shoniz.Extention.dll
+D:\Projects\Shoniz Utility\ShonizExtention\obj\Debug\Shoniz.Extention.pdb

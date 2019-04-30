@@ -1,0 +1,15 @@
+D:\Projects\Shoniz Utility\Common Core\bin\Debug\Shoniz.Common.Core.dll
+D:\Projects\Shoniz Utility\Common Core\bin\Debug\Shoniz.Common.Core.pdb
+D:\Projects\Shoniz Utility\Common Core\obj\Debug\Shoniz.Common.Core.dll
+D:\Projects\Shoniz Utility\Common Core\obj\Debug\Shoniz.Common.Core.pdb
+D:\Projects\Shoniz Utility\Common Core\obj\Debug\Common Core.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common Core\bin\Debug\Shoniz.Common.Core.dll
+E:\Projects\Shoniz Utility\Common Core\bin\Debug\Shoniz.Common.Core.pdb
+E:\Projects\Shoniz Utility\Common Core\obj\Debug\Common Core.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common Core\obj\Debug\Shoniz.Common.Core.dll
+E:\Projects\Shoniz Utility\Common Core\obj\Debug\Shoniz.Common.Core.pdb
+F:\Projects\Shoniz Utility\Common Core\bin\Debug\Shoniz.Common.Core.dll
+F:\Projects\Shoniz Utility\Common Core\bin\Debug\Shoniz.Common.Core.pdb
+F:\Projects\Shoniz Utility\Common Core\obj\Debug\Shoniz.Common.Core.dll
+F:\Projects\Shoniz Utility\Common Core\obj\Debug\Shoniz.Common.Core.pdb
+F:\Projects\Shoniz Utility\Common Core\obj\Debug\Common Core.csprojResolveAssemblyReference.cache

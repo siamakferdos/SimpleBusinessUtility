@@ -1,0 +1,5 @@
+D:\Projects\Shoniz Utility\ShonizException\bin\Debug\Shoniz.Exception.dll
+D:\Projects\Shoniz Utility\ShonizException\bin\Debug\Shoniz.Exception.pdb
+D:\Projects\Shoniz Utility\ShonizException\obj\Debug\Shoniz.Exception.dll
+D:\Projects\Shoniz Utility\ShonizException\obj\Debug\Shoniz.Exception.pdb
+D:\Projects\Shoniz Utility\ShonizException\obj\Debug\ShonizException.csprojResolveAssemblyReference.cache

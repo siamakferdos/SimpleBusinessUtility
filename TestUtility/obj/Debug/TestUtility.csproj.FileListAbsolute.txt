@@ -1,0 +1,10 @@
+D:\Projects\Shoniz Utility\TestUtility\bin\Debug\TestUtility.exe.config
+D:\Projects\Shoniz Utility\TestUtility\bin\Debug\TestUtility.exe
+D:\Projects\Shoniz Utility\TestUtility\bin\Debug\TestUtility.pdb
+D:\Projects\Shoniz Utility\TestUtility\bin\Debug\Shoniz.Common.Core.dll
+D:\Projects\Shoniz Utility\TestUtility\bin\Debug\Shoniz.Common.Data.dll
+D:\Projects\Shoniz Utility\TestUtility\bin\Debug\Shoniz.Common.Core.pdb
+D:\Projects\Shoniz Utility\TestUtility\bin\Debug\Shoniz.Common.Data.pdb
+D:\Projects\Shoniz Utility\TestUtility\obj\Debug\TestUtility.csprojResolveAssemblyReference.cache
+D:\Projects\Shoniz Utility\TestUtility\obj\Debug\TestUtility.exe
+D:\Projects\Shoniz Utility\TestUtility\obj\Debug\TestUtility.pdb

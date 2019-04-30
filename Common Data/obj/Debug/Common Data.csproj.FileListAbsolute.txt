@@ -1,0 +1,36 @@
+D:\Projects\Shoniz Utility\Common Data\bin\Debug\Shoniz.Common.Data.dll
+D:\Projects\Shoniz Utility\Common Data\bin\Debug\Shoniz.Common.Data.pdb
+D:\Projects\Shoniz Utility\Common Data\bin\Debug\Microsoft.Owin.dll
+D:\Projects\Shoniz Utility\Common Data\bin\Debug\Microsoft.Owin.Security.dll
+D:\Projects\Shoniz Utility\Common Data\bin\Debug\Owin.dll
+D:\Projects\Shoniz Utility\Common Data\bin\Debug\Shoniz.Common.Core.dll
+D:\Projects\Shoniz Utility\Common Data\bin\Debug\Shoniz.Common.Core.pdb
+D:\Projects\Shoniz Utility\Common Data\bin\Debug\Microsoft.Owin.xml
+D:\Projects\Shoniz Utility\Common Data\bin\Debug\Microsoft.Owin.Security.xml
+D:\Projects\Shoniz Utility\Common Data\obj\Debug\Common Data.csprojResolveAssemblyReference.cache
+D:\Projects\Shoniz Utility\Common Data\obj\Debug\Shoniz.Common.Data.dll
+D:\Projects\Shoniz Utility\Common Data\obj\Debug\Shoniz.Common.Data.pdb
+E:\Projects\Shoniz Utility\Common Data\bin\Debug\Shoniz.Common.Data.dll
+E:\Projects\Shoniz Utility\Common Data\bin\Debug\Shoniz.Common.Data.pdb
+E:\Projects\Shoniz Utility\Common Data\bin\Debug\Microsoft.Owin.dll
+E:\Projects\Shoniz Utility\Common Data\bin\Debug\Microsoft.Owin.Security.dll
+E:\Projects\Shoniz Utility\Common Data\bin\Debug\Owin.dll
+E:\Projects\Shoniz Utility\Common Data\bin\Debug\Shoniz.Common.Core.dll
+E:\Projects\Shoniz Utility\Common Data\bin\Debug\Shoniz.Common.Core.pdb
+E:\Projects\Shoniz Utility\Common Data\bin\Debug\Microsoft.Owin.xml
+E:\Projects\Shoniz Utility\Common Data\bin\Debug\Microsoft.Owin.Security.xml
+E:\Projects\Shoniz Utility\Common Data\obj\Debug\Common Data.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common Data\obj\Debug\Shoniz.Common.Data.dll
+E:\Projects\Shoniz Utility\Common Data\obj\Debug\Shoniz.Common.Data.pdb
+F:\Projects\Shoniz Utility\Common Data\bin\Debug\Shoniz.Common.Data.dll
+F:\Projects\Shoniz Utility\Common Data\bin\Debug\Shoniz.Common.Data.pdb
+F:\Projects\Shoniz Utility\Common Data\bin\Debug\Microsoft.Owin.dll
+F:\Projects\Shoniz Utility\Common Data\bin\Debug\Microsoft.Owin.Security.dll
+F:\Projects\Shoniz Utility\Common Data\bin\Debug\Owin.dll
+F:\Projects\Shoniz Utility\Common Data\bin\Debug\Shoniz.Common.Core.dll
+F:\Projects\Shoniz Utility\Common Data\bin\Debug\Shoniz.Common.Core.pdb
+F:\Projects\Shoniz Utility\Common Data\bin\Debug\Microsoft.Owin.xml
+F:\Projects\Shoniz Utility\Common Data\bin\Debug\Microsoft.Owin.Security.xml
+F:\Projects\Shoniz Utility\Common Data\obj\Debug\Common Data.csprojResolveAssemblyReference.cache
+F:\Projects\Shoniz Utility\Common Data\obj\Debug\Shoniz.Common.Data.dll
+F:\Projects\Shoniz Utility\Common Data\obj\Debug\Shoniz.Common.Data.pdb

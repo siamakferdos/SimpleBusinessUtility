@@ -1,0 +1,15 @@
+D:\Projects\Shoniz Utility\Common WPF MVVM\bin\Debug\Shoniz.Common.WPF.MVVM.dll
+D:\Projects\Shoniz Utility\Common WPF MVVM\bin\Debug\Shoniz.Common.WPF.MVVM.pdb
+D:\Projects\Shoniz Utility\Common WPF MVVM\obj\Debug\Shoniz.Common.WPF.MVVM.dll
+D:\Projects\Shoniz Utility\Common WPF MVVM\obj\Debug\Shoniz.Common.WPF.MVVM.pdb
+D:\Projects\Shoniz Utility\Common WPF MVVM\obj\Debug\Common WPF MVVM.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common WPF MVVM\bin\Debug\Shoniz.Common.WPF.MVVM.dll
+E:\Projects\Shoniz Utility\Common WPF MVVM\bin\Debug\Shoniz.Common.WPF.MVVM.pdb
+E:\Projects\Shoniz Utility\Common WPF MVVM\obj\Debug\Common WPF MVVM.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common WPF MVVM\obj\Debug\Shoniz.Common.WPF.MVVM.dll
+E:\Projects\Shoniz Utility\Common WPF MVVM\obj\Debug\Shoniz.Common.WPF.MVVM.pdb
+F:\Projects\Shoniz Utility\Common WPF MVVM\bin\Debug\Shoniz.Common.WPF.MVVM.dll
+F:\Projects\Shoniz Utility\Common WPF MVVM\bin\Debug\Shoniz.Common.WPF.MVVM.pdb
+F:\Projects\Shoniz Utility\Common WPF MVVM\obj\Debug\Shoniz.Common.WPF.MVVM.dll
+F:\Projects\Shoniz Utility\Common WPF MVVM\obj\Debug\Shoniz.Common.WPF.MVVM.pdb
+F:\Projects\Shoniz Utility\Common WPF MVVM\obj\Debug\Common WPF MVVM.csprojResolveAssemblyReference.cache

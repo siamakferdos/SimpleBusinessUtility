@@ -1,0 +1,4 @@
+D:\Projects\Shoniz Utility\Extentions\bin\Debug\Extentions.dll
+D:\Projects\Shoniz Utility\Extentions\bin\Debug\Extentions.pdb
+D:\Projects\Shoniz Utility\Extentions\obj\Debug\Extentions.dll
+D:\Projects\Shoniz Utility\Extentions\obj\Debug\Extentions.pdb

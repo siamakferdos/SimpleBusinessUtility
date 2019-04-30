@@ -1,0 +1,14 @@
+D:\Projects\Shoniz Utility\Common Report Web Stimulsoft\bin\Debug\Common.Report.Web.Stimulsoft.dll
+D:\Projects\Shoniz Utility\Common Report Web Stimulsoft\bin\Debug\Common.Report.Web.Stimulsoft.pdb
+D:\Projects\Shoniz Utility\Common Report Web Stimulsoft\obj\Debug\Common.Report.Web.Stimulsoft.dll
+D:\Projects\Shoniz Utility\Common Report Web Stimulsoft\obj\Debug\Common.Report.Web.Stimulsoft.pdb
+D:\Projects\Shoniz Utility\Common Report Web Stimulsoft\obj\Debug\Common Report Web Stimulsoft.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common Report Web Stimulsoft\bin\Debug\Common.Report.Web.Stimulsoft.dll
+E:\Projects\Shoniz Utility\Common Report Web Stimulsoft\bin\Debug\Common.Report.Web.Stimulsoft.pdb
+E:\Projects\Shoniz Utility\Common Report Web Stimulsoft\obj\Debug\Common Report Web Stimulsoft.csprojResolveAssemblyReference.cache
+E:\Projects\Shoniz Utility\Common Report Web Stimulsoft\obj\Debug\Common.Report.Web.Stimulsoft.dll
+E:\Projects\Shoniz Utility\Common Report Web Stimulsoft\obj\Debug\Common.Report.Web.Stimulsoft.pdb
+F:\Projects\Shoniz Utility\Common Report Web Stimulsoft\bin\Debug\Common.Report.Web.Stimulsoft.dll
+F:\Projects\Shoniz Utility\Common Report Web Stimulsoft\bin\Debug\Common.Report.Web.Stimulsoft.pdb
+F:\Projects\Shoniz Utility\Common Report Web Stimulsoft\obj\Debug\Common.Report.Web.Stimulsoft.dll
+F:\Projects\Shoniz Utility\Common Report Web Stimulsoft\obj\Debug\Common.Report.Web.Stimulsoft.pdb
